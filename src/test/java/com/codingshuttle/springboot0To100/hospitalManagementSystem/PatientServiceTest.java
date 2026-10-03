@@ -32,9 +32,9 @@ public class PatientServiceTest {
 //
 //        System.out.println(rowsAffected);
 
-        List<Patient> patientList = patientRepository.getAllPatientsWithAppointments();
 
-        for(var p: patientList) {
+        List<Patient> patientList = patientRepository.getAllPatientWithAppointments();
+        for(var p : patientList){
             System.out.println(p);
         }
     }

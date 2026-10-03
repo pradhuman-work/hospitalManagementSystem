@@ -33,8 +33,8 @@ public class Insurance {
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
-    @OneToOne(mappedBy = "insurance")
     @ToString.Exclude
-    private Patient patient; // inverse side
+    @OneToOne(mappedBy = "insurance")
+    private Patient patient; //Inverse side
 
 }
